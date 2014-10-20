@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>ng-mouseover</title>
+</head>
+<body ng-controller="myController">
+
+<p ng-mouseover="mouseover()" ng-style="color">マウスオーバーで色が反転</p>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
+<script>
+  angular.module('myApp', []).controller('myController', ['$scope', function($scope) {
+    $scope.mouseover = function() {
+      $scope.color = {
+        backgroundColor: '#000',
+        color: '#fff'
+      };
+    }
+  }]);
+</script>
+</body>
+</html>
