@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <title>ng-switch</title>
+</head>
+<body>
+
+<input type="radio" ng-model="greeting" value="morning"/>朝
+<input type="radio" ng-model="greeting" value="daytime"/>昼
+<input type="radio" ng-model="greeting" value="night"/>夜
+
+<div ng-switch="greeting">
+  <div ng-switch-when="morning">おはよう</div>
+  <div ng-switch-when="daytime">こんにちは</div>
+  <div ng-switch-when="night">こんばんは</div>
+  <div ng-switch-default>選択してください</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
+</body>
+</html>
