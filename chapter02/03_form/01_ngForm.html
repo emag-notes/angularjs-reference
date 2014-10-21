@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <title>ng-form</title>
+</head>
+<body>
+
+<form name="demoForm" ng-init="list=['foo','bar','baz']">
+  <div ng-repeat="item in list" ng-form>
+    <input type="text" ng-value="item"/>
+    <input type="submit" value="更新"/>
+  </div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
+</body>
+</html>
