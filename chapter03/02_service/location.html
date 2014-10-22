@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"/>
+  <title>$location</title>
+</head>
+<body ng-controller="location">
+
+<ul>
+  <li><button ng-click="setUrl()">setUrl</button></li>
+  <li><button ng-click="setPath()">setPath</button></li>
+</ul>
+
+<ul>
+  <li><button ng-click="absUrl()">absUrl()</button></li>
+  <li><button ng-click="protocol()">protocol()</button></li>
+  <li><button ng-click="port()">port()</button></li>
+  <li><button ng-click="host()">host()</button></li>
+  <li><button ng-click="path()">path()</button></li>
+  <li><button ng-click="search()">search()</button></li>
+  <li><button ng-click="hash()">hash()</button></li>
+  <li><button ng-click="url()">url()</button></li>
+</ul>
+
+<script src="../../lib/angular.js"></script>
+<script src="location.js"></script>
+</body>
+</html>
