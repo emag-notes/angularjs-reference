@@ -7,7 +7,13 @@ app.controller('GeneralApiController', ['$scope', '$http', '$timeout', function 
     'bind.js',
     'bind_callback.js',
     'bind_partial.js',
-    'copy.js'
+    'copy.js',
+    'extend.js',
+    'foreach.js',
+    'tojson.js',
+    'fromjson.js',
+    'equals.js',
+    'judge.js'
   ];
 
   $scope.updateCode = function() {
