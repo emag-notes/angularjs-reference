@@ -1,0 +1,10 @@
+<div ng-controller="ParentController">
+  <h3>parent</h3>
+  <p>value: {{value}}</p>
+  <button ng-click="incrementValue()">increment value</button>
+  <div ng-controller="ChildController">
+    <h3>child</h3>
+    <p>value: {{value}}</p>
+    <button ng-click="decrementValue()">decrement value</button>
+  </div>
+</div>
