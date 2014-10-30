@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-strict-di>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+<h2>$scope.$watchCollection</h2>
+
+<div ng-controller="WatchCollectionController">
+  <input type="text" ng-model="message"/>
+  <button ng-click="items.push(message)">push</button>
+  <p>{{items}}</p>
+  <p>{{result}}</p>
+</div>
+
+<script src="../../lib/angular.js"></script>
+<script src="app.js"></script>
+<script src="watch_collection.js"></script>
+</body>
+</html>
