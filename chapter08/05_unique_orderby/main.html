@@ -1,0 +1,11 @@
+<div ng-controller="SimpleController">
+  <p>unique | orderBy</p>
+  <div ng-repeat="item in items | unique | orderBy">
+    {{item}}
+  </div>
+  <hr/>
+  <p>uniqueOrderBy</p>
+  <div ng-repeat="item in items | uniqueOrderBy">
+    {{item}}<br/>
+  </div>
+</div>
